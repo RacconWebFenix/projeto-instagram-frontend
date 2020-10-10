@@ -7,6 +7,8 @@
     font-family: sans-serif;
     font-size: 14px;
 }
+/*Reset Layout*/
+
 
 body{
     width: 100%;
@@ -35,10 +37,24 @@ body{
 .isntagram-phone img{
     width: 25rem;
 }
-
-.profile-photo img{
-    width: 10rem;
+/*Colocando um Clip mask para melhorar o tamanho da imagem */
+.container-moldura{
+    width: 100px;
+    height: 100px;
 }
+.moldura{
+    width: 100px;
+    height: 100px;
+    background-color: rgba(255, 0, 0, 0.205);
+    position: absolute;
+ 
+}
+.profile-photo img{
+    width: 100px;
+    clip: rect(0 100px 100px 0);
+    position: absolute;
+}
+/*Colocando um Clip mask para melhorar o tamanho da imagem */
 .instagram-logo{
     width: 20rem;
 }
