@@ -62,7 +62,7 @@ body{
     min-height: 19rem;
 }
 .instagram-logo{
-    width: 15rem;
+    width: 10rem;
 }
 
 .container-moldura, .moldura, .profile-photo {
@@ -71,25 +71,78 @@ body{
     align-items: center;
     border-radius: 50%;
     overflow: hidden;
-
+    min-height: 6rem;
+    margin: 1rem;
+  
 }
 
+.instagram-login{
+    background-color: #0095f6;
+    color: #fff;
+    padding: 8px;
+    border-radius: 4px;
+}
 
+.instagram-logout{
+    color: #0095f6;
+    margin-top: 1rem;
+}
+.not-account{
+    color: rgb(160, 160, 160);
+}
+
+.link-blue{
+    color: #0095f6;
+}
+
+.get-the-app{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 1.3rem 0;
+}
+
+.download{
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 1rem;
+}
+
+.app-download{
+    height: 3rem;
+    width: 10rem;
+    background-size: cover;
+    
+}
+
+.app-download:nth-child(1){
+    background-image: url('/img/app-store-botao.png');
+}
+.app-download:nth-child(2){
+    background-image: url('/img/google-play-botao.png');
+}
 
 /*Colocando um Clip mask para melhorar o tamanho da imagem */
 .container-moldura{
-    width: 15rem;
-    height: 15rem;
+    width: 5rem;
+    height: 5rem;
+
+   
 }
 .moldura{
-    width: 15rem;
-    height: 15rem;
+    width: 8rem;
     position: absolute;
+   
  
 }
 .profile-photo img{
-    width: 15rem;
+    width: 10rem;
     clip: auto(0 15rem 15rem 0);
     position: absolute;
+   
 }
 /*Colocando um Clip mask para melhorar o tamanho da imagem */
