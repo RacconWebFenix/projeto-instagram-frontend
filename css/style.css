@@ -13,7 +13,7 @@
 body{
     width: 100%;
     min-height: 100vh;
-    background-color:  rgb(192, 192, 192);
+    background-color:  rgb(199, 199, 199);
     margin: 0;
     padding: 0;
     display: flex;
@@ -36,6 +36,8 @@ body{
 }
 .instagram-phone img{
     height: 34rem;
+    
+    
 }
 
 .instagram-continue{
@@ -45,6 +47,7 @@ body{
     flex-direction: column;
     width: 50%;
     min-height: 34rem;
+    
 }
 
 .group{
@@ -55,7 +58,8 @@ body{
     background-color: #ffffff;
     width: 100%;
     padding: 1.3rem 0;
-    border: 1px solid rgba(87, 85, 85, 0.616);
+  
+    box-shadow: 0 0 5px black;
 }
 
 .group:nth-child(1){
@@ -146,3 +150,31 @@ body{
    
 }
 /*Colocando um Clip mask para melhorar o tamanho da imagem */
+
+/* media queries */
+
+@media(max-width: 1024px){
+    .instagram-wrapper{
+        width: 90%;
+    }
+}
+
+@media(max-width: 650px){
+    body{
+        background-color: #fff;
+    }
+
+    .instagram-wrapper{
+        width: 90%;
+    }
+    .instagram-phone{
+        display: none;
+    }
+    .instagram-continue{
+        width: 100%;
+    }
+    .group{
+        border:none;
+        box-shadow: none;
+    }
+}
