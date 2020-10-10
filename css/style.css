@@ -28,33 +28,68 @@ body{
    height: 100vh;
 }
 
-.isntagram-phone{
+.instagram-phone{
     display: flex;
     align-items: center;
     justify-content: center;
     width: 50%;
 }
-.isntagram-phone img{
-    width: 25rem;
+.instagram-phone img{
+    height: 34rem;
 }
+
+.instagram-continue{
+    display: flex;
+    align-items: center; /*Fica na horizontal  quando setado flex-direction:column; */
+    justify-content: space-around; /*Fica na vertical quando setado flex-direction:column; */
+    flex-direction: column;
+    width: 50%;
+    min-height: 34rem;
+}
+
+.group{
+    display: flex;
+    justify-content: space-between; /*Fica na vertical quando setado flex-direction:column; */
+    align-items: center; /*Fica na horizontal  quando setado flex-direction:column; */
+    flex-direction: column;
+    background-color: #ffffff;
+    width: 100%;
+    padding: 1.3rem 0;
+    border: 1px solid rgba(87, 85, 85, 0.616);
+}
+
+.group:nth-child(1){
+    min-height: 19rem;
+}
+.instagram-logo{
+    width: 15rem;
+}
+
+.container-moldura, .moldura, .profile-photo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    overflow: hidden;
+
+}
+
+
+
 /*Colocando um Clip mask para melhorar o tamanho da imagem */
 .container-moldura{
-    width: 100px;
-    height: 100px;
+    width: 15rem;
+    height: 15rem;
 }
 .moldura{
-    width: 100px;
-    height: 100px;
-    background-color: rgba(255, 0, 0, 0.205);
+    width: 15rem;
+    height: 15rem;
     position: absolute;
  
 }
 .profile-photo img{
-    width: 100px;
-    clip: rect(0 100px 100px 0);
+    width: 15rem;
+    clip: auto(0 15rem 15rem 0);
     position: absolute;
 }
 /*Colocando um Clip mask para melhorar o tamanho da imagem */
-.instagram-logo{
-    width: 20rem;
-}
